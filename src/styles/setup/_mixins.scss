@@ -1,0 +1,16 @@
+@mixin pseudo($content: '', $display: block){
+    content: $content;
+    display: $display;
+}
+
+
+@mixin respond-to($media) {
+    /* Landscape phone to portrait tablet */
+    @if $media == tablet {
+        @media (min-width: 767px) {@content; }
+    }
+    /* Large desktop */
+    @else if $media == desktop {
+        @media (min-width: 1200px) { @content; }
+    }
+}

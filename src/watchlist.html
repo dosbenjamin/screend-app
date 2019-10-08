@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head itemscope>
+        <meta charset="UTF-8">
+        <title>Watchlist | App | ScreenD</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Watchlist de l'application ScreenD où sont repris les films ajoutés précédements ou bien ceux qui ont été vus.">
+        <meta itemprop="name" content="Watchlist | App | ScreenD">
+        <meta itemprop="description" content="Watchlist de l'application ScreenD où sont repris les films ajoutés précédements ou bien ceux qui ont été vus.">
+        <meta itemprop="image" content="https://benjamindossantos.be/projets/movie-wishlist/assets/image/preview.svg">
+        <meta property="og:url" content="https://benjamindossantos.be/projets/movie-wishlist/app/watchlist.html">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Watchlist | App | ScreenD">
+        <meta property="og:description" content="Watchlist de l'application ScreenD où sont repris les films ajoutés précédements ou bien ceux qui ont été vus.">
+        <meta property="og:image" content="https://benjamindossantos.be/projets/movie-wishlist/assets/image/preview.svg">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Watchlist | App | ScreenD">
+        <meta name="twitter:description" content="Watchlist de l'application ScreenD où sont repris les films ajoutés précédements ou bien ceux qui ont été vus.">
+        <meta name="twitter:image" content="https://benjamindossantos.be/projets/movie-wishlist/assets/image/preview.svg">
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="assets/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#FD9C0A">
+        <link rel="stylesheet" type="text/css" href="/styles/app.css">
+        <script async src="/scripts/app.js"></script>
+    </head>
+
+    <body>
+        <header class="section section--header">
+            <h1 class="title title--underline">Watchlist</h1>
+        </header>
+        <main>
+            <section class="section">
+                <ul class="counter">
+                    <li class="counter__item">Films à regarder&#8239;:&#8239;<span class="counter__toSee">0</span></li>
+                    <li class="counter__item">Films regardés&#8239;:&#8239;<span class="counter__seen">0</span></li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2 class="title title--smaller">à voir</h2>
+                <ul class="movieList movieList--noMargin"></ul>
+            </section>
+            <section class="section">
+                <h2 class="title title--smaller">Vus</h2>
+                <ul class="movieList"></ul>
+            </section>
+            <section class="section section--overlay section--moviePage"></section>
+        </main>
+        <footer class="section">
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item menu__item--home"><a href="index.html">Accueil</a></li>
+                    <li class="menu__item menu__item--watchlistActive"><a href="watchlist.html">Watchlist</a></li>
+                    <li class="menu__item menu__item--search"><a href="search.html">Recherche</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+
+</html>

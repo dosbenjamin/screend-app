@@ -1,0 +1,21 @@
+// Setup
+@import 'setup/normalize';
+@import 'setup/variables';
+@import 'setup/mixins';
+@import 'setup/typography';
+
+// Basics
+@import 'basics/base';
+@import 'basics/layout';
+@import 'basics/buttons';
+@import 'basics/links';
+
+// Components
+@import 'components/navigation';
+@import 'components/popular-movie';
+@import 'components/filter';
+@import 'components/movie-list';
+@import 'components/counter';
+@import 'components/search';
+@import 'components/category-list';
+@import 'components/movie-page'

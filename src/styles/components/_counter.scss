@@ -1,0 +1,33 @@
+.counter {
+    box-sizing: border-box;
+    padding: 2.027em;
+    background-color: $c-accent;
+    border-radius: 5px;
+    margin-bottom: 2.887em;
+    @include respond-to(desktop) {
+        padding: 0;
+        background-color: initial;
+        display: flex;
+        justify-content: center;
+    }
+    &__item {
+        margin: 0;
+        font-size: 1em;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: .79em;
+        @include respond-to(desktop) {
+            margin: 0;
+            background-color: $c-accent;
+            border-radius: 5px;
+            padding: 2.887em;
+        }
+        &:first-child {
+            margin-bottom: 1rem;
+            @include respond-to(desktop) {
+                margin: 0 2.027rem 0 0;
+            }
+        }
+    }
+}

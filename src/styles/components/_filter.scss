@@ -1,0 +1,20 @@
+.filter {
+    display: flex;
+    position: relative;
+    overflow: scroll;
+    justify-content: center;
+    width: 100vw;
+    left: -2.027rem;
+    margin-bottom: 2.887rem;
+    @include respond-to(desktop) {
+        width: fit-content;
+        margin: 0 auto 5.202rem auto;
+        overflow: hidden;
+        left: 0;
+    }
+    &__item {
+        &:first-child {
+            margin-right: 1rem;
+        }
+    }
+}

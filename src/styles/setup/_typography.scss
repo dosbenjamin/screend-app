@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400');
+html {
+    font-size: 16px;
+    font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+    line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    @include respond-to (desktop) {
+        font-size: 18px;
+    }
+}
+.title {
+    margin: 0;
+    font-size: 1em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $c-grey;
+    margin-top: 2.027rem;
+    font-weight: 400;
+    @include respond-to(desktop) {
+        font-size: 1.802em;
+        letter-spacing: 4px;
+        margin-bottom: 3.653rem;
+        margin-top: 6.583rem;
+    }
+    &--underline {
+        text-align: center;
+        margin-bottom: 2.887rem;
+        color: #fff;
+        @include respond-to(desktop) {
+            margin-top: 9.373rem;
+            margin-bottom: 2.027rem;
+        }
+        &::after {
+            @include pseudo;
+            width: 2.027rem;
+            height: 1px;
+            background-color: #fff;
+            margin: 1rem auto 0 auto;
+            @include respond-to(desktop) {
+                height: 2px;
+            }
+        }
+    }
+    &--smaller {
+        font-size: .79em;
+    }
+    &--big {
+        font-size: 2.887em;
+    }
+}

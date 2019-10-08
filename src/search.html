@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head itemscope>
+        <meta charset="UTF-8">
+        <title>Recherche | App | ScreenD</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Rechercher un film vieux ou récent via le champ de recherche où le tri par catégorie de l'application ScreenD.">
+        <meta itemprop="name" content="Recherche | App | ScreenD">
+        <meta itemprop="description" content="Rechercher un film vieux ou récent via le champ de recherche où le tri par catégorie de l'application ScreenD.">
+        <meta itemprop="image" content="https://benjamindossantos.be/projets/movie-wishlist/assets/image/preview.svg">
+        <meta property="og:url" content="https://benjamindossantos.be/projets/movie-wishlist/app/search.html">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Recherche | App | ScreenD">
+        <meta property="og:description" content="Rechercher un film vieux ou récent via le champ de recherche où le tri par catégorie de l'application ScreenD.">
+        <meta property="og:image" content="https://benjamindossantos.be/projets/movie-wishlist/assets/image/preview.svg">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Recherche | App | ScreenD">
+        <meta name="twitter:description" content="Rechercher un film vieux ou récent via le champ de recherche où le tri par catégorie de l'application ScreenD.">
+        <meta name="twitter:image" content="https://benjamindossantos.be/projets/movie-wishlist/assets/image/preview.svg">
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="assets/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#FD9C0A">
+        <link rel="stylesheet" type="text/css" href="/styles/app.css">
+        <script async src="/scripts/app.js"></script>
+    </head>
+
+    <body>
+        <header class="section section--header">
+            <h1 class="title title--underline">Recherche</h1>
+        </header>
+        <main>
+            <section class="section">
+                <form class="search" method="get">
+                    <label class="search__label" for="search">Rechercher un film</label>
+                    <input class="search__input" id="search" type="search" name="search" placeholder="Rechercher un film...">
+                    <button class="search__button" type="submit">Recherche</button>
+                </form>
+                <ul class="movieList movieList--noMargin"></ul>
+            </section>
+            <section class="section">
+                <h2 class="title title--smaller">Genres</h2>
+                <ul class="categoryList"></ul>
+            </section>
+            <section class="section section--overlay section--moviePage"></section>
+            <section class="section section--overlay section--category">
+                <h2 class="title title--underline">Action</h2>
+                <ul class="movieList"></ul>
+            </section>
+        </main>
+        <footer class="section">
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item menu__item--home"><a href="index.html">Accueil</a></li>
+                    <li class="menu__item menu__item--watchlist"><a href="watchlist.html">Watchlist</a></li>
+                    <li class="menu__item menu__item--searchActive"><a href="#">Recherche</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+
+</html>

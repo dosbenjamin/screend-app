@@ -1,0 +1,30 @@
+.search {
+    margin-bottom: 2.027em;
+    @include respond-to(desktop) {
+        width: 40%;
+        margin: 0 auto 5.202rem auto;
+    }
+    &__label {
+        display: none;
+    }
+    &__input {
+        width: 100%;
+        border: 0;
+        border-radius: 5px;
+        background-color: #fff;
+        padding: 1em 2.027em;
+        &::placeholder {
+            font-size: .79em;
+            letter-spacing: 3px;
+            line-height: 1;
+            text-transform: uppercase;
+            color: $c-grey;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    &__button {
+        display: none;
+    }
+}
